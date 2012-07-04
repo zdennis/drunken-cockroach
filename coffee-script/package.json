@@ -1,0 +1,14 @@
+{
+  "name": "drunken-cockroach",
+  "version": "0.0.0",
+  "description": "CoffeeScript implementation of the Drunken Cockroach problem as described in the book: Smalltalk-80 The Language",
+  "main": "drunken-cockroach.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Dennis",
+  "license": "MIT"
+  "dependencies" : {
+    "simplesets"   :  "1.2.0"
+  }
+}

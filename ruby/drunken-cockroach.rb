@@ -121,6 +121,7 @@ class DrunkenCockroach
     @tiles_visited.push @tile
     while @tiles_visited.to_set.length < number_of_tiles
       delta_point = directions[rand(directions.length)]
+      puts "at #{@tile.location} by #{delta_point} is #{@tile.neighbor_at(delta_point).location}"
       @tile = @tile.neighbor_at delta_point
       @tiles_visited.push @tile
     end
@@ -144,4 +145,5 @@ results = []
   c.walk_within rectangle, Point.new(1,1)
   results.push c.number_of_steps
 end
+
 puts results.inspect
