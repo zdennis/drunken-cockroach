@@ -1,6 +1,9 @@
-(ns drunken-cockroach.point)
+(ns drunken-cockroach.point
+  (:refer-clojure :exclude [max min]) )
 
 (defstruct point :x :y)
+
+(defn create [x y] (struct point x y))
 
 (defn add [point1 point2]
   (let [
