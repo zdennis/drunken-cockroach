@@ -68,7 +68,7 @@ end
 
 
 # A tile refers to its row and column locations, each of which must be at least
-# 1 and no larger than the width or length of the floor. Therefore, in 
+# 1 and no larger than the width or length of the floor. Therefore, in
 # addition to remember its location, a Tile must remember the maximum
 # floor space in which it can be placed.
 class Tile
@@ -115,7 +115,7 @@ class DrunkenCockroach
   end
 
   def walk_within(rectangle, starting_point)
-    @tiles_visited = []    
+    @tiles_visited = []
     @tile = Tile.new location: starting_point, floor_area: rectangle
     number_of_tiles = (rectangle.width) * (rectangle.height)
     @tiles_visited.push @tile

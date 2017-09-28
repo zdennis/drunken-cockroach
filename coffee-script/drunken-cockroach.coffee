@@ -2,7 +2,7 @@ extend = require 'xtend'
 sets   = require 'simplesets'
 _      = require 'underscore'
 
-Comparable = 
+Comparable =
   compareTo: (other) ->
     throw "Must supply where included to return -1, 0, or 1!"
 
@@ -16,7 +16,7 @@ Comparable =
     @compareTo(other) == -1
 
 class Point
-  extend @prototype, Comparable  
+  extend @prototype, Comparable
 
   constructor: (@x, @y) ->
 
@@ -94,7 +94,7 @@ class DrunkenCockroach
       index = parseInt(Math.random() * directions.length)
       delta_point = directions[index]
       @tile = @tile.neighborAt(delta_point)
-      @tilesVisited.push @tile      
+      @tilesVisited.push @tile
 
   numberOfSteps: ->
     @tilesVisited.length
